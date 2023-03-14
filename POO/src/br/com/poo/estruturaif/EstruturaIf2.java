@@ -1,5 +1,6 @@
 package br.com.poo.estruturaif;
 
+import java.text.DecimalFormat;
 import java.util.Scanner;
 
 /*
@@ -13,6 +14,7 @@ public class EstruturaIf2 {
 	public static void main(String[] args) {
 		double nota1, nota2, nota3, nota4, media;
 		Scanner entrada = new Scanner(System.in);
+		DecimalFormat formatter = new DecimalFormat("#0.00");
 		
 		System.out.println("----------- Sistema de Notas --------\n");
 		System.out.println("Digite a primeira nota: ");
@@ -30,15 +32,15 @@ public class EstruturaIf2 {
 		media = (nota1 + nota2 + nota3 + nota4) / 4;
 		
 		if(media >= 6) {
-			System.out.println("\nA média deste aluno foi de: " + media);
+			System.out.println("\nA média deste aluno foi de: " + formatter.format(media));
 			System.out.println("\nCom isto, aluno está aprovado.");
 		}
 		else if(media >= 5) {
-			System.out.println("\nA média deste aluno foi de: " + media);
+			System.out.println("\nA média deste aluno foi de: " + formatter.format(media));
 			System.out.println("\nCom isto, o aluno está em recuperação!");
 		}
 		else {
-			System.out.println("\nA média deste aluno foi de: " + media);
+			System.out.println("\nA média deste aluno foi de: " + formatter.format(media));
 			System.out.println("\nCom isto, o aluno está reprovado!!!");
 		}
 	}
