@@ -47,7 +47,7 @@ public class EstruturaIf3 {
 			   System.out.println("\nO salário com o desconto é de: " + formatter.format(novoSalario));
 		   }
 		   else {
-			   System.out.println("\n Sinto muito, mas o salário informado não está na tabela :(");
+			   System.out.println("\n Sinto muito, mas o salário informado não está na tabela. Tente com um número menor. :(");
 		   }
 	}
 
