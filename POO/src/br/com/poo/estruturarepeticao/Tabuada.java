@@ -1,5 +1,8 @@
 package br.com.poo.estruturarepeticao;
 
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
@@ -7,7 +10,9 @@ import javax.swing.JTextArea;
 import javax.swing.JTextField;
 
 public class Tabuada extends JFrame {
-
+	
+	
+	static String dados = "";
 	public static void main(String[] args) {
 		// Gerando um objeto de janela baseado na
 		// classe JFrame. Abaixo um processo de
@@ -71,6 +76,28 @@ public class Tabuada extends JFrame {
 		btnCalcular.setBounds(280,10,100,30);
 		
 		janela.add(btnCalcular);
+		
+		// Vamos adicionar um evento de clique ao botão criado
+		// Ao clicar no botão o valor de txtNumero deve ser repassado
+		// Para txtResultado e exibido ao usuário
+		btnCalcular.addActionListener(new ActionListener() {
+			
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				
+				for(int i = 1 ; i <= 10 ; i++) {
+					dados += txtNumero.getText() + " x " + i + " = " +
+					Integer.parseInt(txtNumero.getText()) * i + "\n";
+				}
+				
+				txtResultado.setText(dados);
+				txtNumero.setText("");
+				// limpar a váriavel dados para que sempre após exibir o resultado
+				// A variavel dados seja limpa para aguardar novos dados
+				dados = "";
+			}
+
+			});
 		
 		// Comando para mostrar a janela:
 		janela.setVisible(true);
