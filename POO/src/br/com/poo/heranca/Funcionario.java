@@ -11,7 +11,6 @@ public class Funcionario extends PessoaFisica {
 		this.setor = setor;
 	}
 	
-	
 	public String getCargo() {
 		return cargo;
 	}

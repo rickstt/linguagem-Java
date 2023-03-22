@@ -29,5 +29,4 @@ public abstract class PessoaFisica extends Pessoa{
 		this.cpf = cpf;
 	}
 	
-	
 }

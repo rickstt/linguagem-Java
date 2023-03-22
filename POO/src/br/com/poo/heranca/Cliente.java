@@ -19,5 +19,4 @@ public class Cliente extends PessoaFisica {
 		this.saldoCompras = saldoCompras;
 	}
 
-	
 }

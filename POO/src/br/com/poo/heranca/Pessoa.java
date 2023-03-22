@@ -16,7 +16,6 @@ public abstract class Pessoa {
 	}
 	
 	// Gerar os métodos de acesso get set
-	
 	public int getId() {
 		return id;
 	}

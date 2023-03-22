@@ -10,13 +10,12 @@ public class ContaPoupanca extends ContaBancaria {
 	}
 
 	public ContaPoupanca(Long numeroBanco,int agencia,Long numeroConta,String titular,double saldo,double rendimentos) {
-		this.rendimentos = rendimentos;
 		super.setNumeroBanco(numeroBanco);
 		super.setAgencia(agencia);
 		super.setNumeroConta(numeroConta);
 		super.setTitular(titular);
 		super.setTitular(titular);
-		
+		this.rendimentos = rendimentos;
 	}
 
 	public double getRendimentos() {
@@ -35,8 +34,8 @@ public class ContaPoupanca extends ContaBancaria {
 			msg = "Saldo insuficiente";
 		}
 		else {
-			msg = "Saque realizado";
 			super.setSaldo(super.getSaldo() - valor);
+			msg = "Saque realizado";
 		}
 		return msg;
 	}

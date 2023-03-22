@@ -13,17 +13,26 @@
   </edges>
   <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_X2YOEMfnEe2fzNrhzgeuLA" sourceAnchor="178.0,0.0" targetAnchor="176.0,118.0" superClass="_TTIFUMfnEe2fzNrhzgeuLA" subClass="_X2aDQMfnEe2fzNrhzgeuLA">
     <modelElement href="POO.uml#_X1nZEMfnEe2fzNrhzgeuLA"/>
-    <bendpoints xmi:id="_dg1Pc8fnEe2fzNrhzgeuLA" sourceY="-30" targetX="137" targetY="41"/>
-    <bendpoints xmi:id="_dg1PdMfnEe2fzNrhzgeuLA" sourceX="-137" sourceY="-30" targetY="41"/>
+    <bendpoints xmi:id="_liYZE8itEe2Wn-cmpFegyg" sourceY="-21" targetX="-52" targetY="21"/>
+    <bendpoints xmi:id="_liYZFMitEe2Wn-cmpFegyg" sourceX="52" sourceY="-21" targetY="21"/>
   </edges>
-  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_YcxfsMfnEe2fzNrhzgeuLA" sourceAnchor="140.0,0.0" targetAnchor="176.0,118.0" superClass="_TTIFUMfnEe2fzNrhzgeuLA" subClass="_YczU4MfnEe2fzNrhzgeuLA">
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_YcxfsMfnEe2fzNrhzgeuLA" sourceAnchor="281.0,49.0" targetAnchor="176.0,118.0" superClass="_TTIFUMfnEe2fzNrhzgeuLA" subClass="_YczU4MfnEe2fzNrhzgeuLA">
     <modelElement href="POO.uml#_YcADoMfnEe2fzNrhzgeuLA"/>
-    <bendpoints xmi:id="_dg1PccfnEe2fzNrhzgeuLA" sourceY="-31" targetX="-300" targetY="41"/>
-    <bendpoints xmi:id="_dg1PcsfnEe2fzNrhzgeuLA" sourceX="300" sourceY="-31" targetY="41"/>
+    <bendpoints xmi:id="_liYZEMitEe2Wn-cmpFegyg" sourceX="141" targetX="191" targetY="316"/>
+    <bendpoints xmi:id="_liYZEcitEe2Wn-cmpFegyg" sourceX="141" sourceY="-295" targetX="191" targetY="21"/>
+    <bendpoints xmi:id="_liYZEsitEe2Wn-cmpFegyg" sourceX="-50" sourceY="-295" targetY="21"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_g13moMitEe2Wn-cmpFegyg" sourceAnchor="579.0,87.0" targetAnchor="0.0,97.0" superClass="_glMGUMitEe2Wn-cmpFegyg" subClass="_g174EMitEe2Wn-cmpFegyg">
+    <modelElement href="POO.uml#_g0j_EMitEe2Wn-cmpFegyg"/>
+    <bendpoints xmi:id="_sFNz8MitEe2Wn-cmpFegyg" sourceX="32" targetX="-200" targetY="252"/>
+    <bendpoints xmi:id="_sFNz8citEe2Wn-cmpFegyg" sourceX="32" sourceY="-252" targetX="-200"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_hJ-OYMitEe2Wn-cmpFegyg" sourceAnchor="573.0,69.0" targetAnchor="0.0,97.0" superClass="_glMGUMitEe2Wn-cmpFegyg" subClass="_hKBRsMitEe2Wn-cmpFegyg">
+    <modelElement href="POO.uml#_hIrN4MitEe2Wn-cmpFegyg"/>
   </edges>
   <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_SzXnMMfnEe2fzNrhzgeuLA" name="Pessoa" abstractClass="true" subclassedBy="_TTFCAMfnEe2fzNrhzgeuLA _TnyGsMfnEe2fzNrhzgeuLA">
     <modelElement href="POO.uml#_SuXLYMfnEe2fzNrhzgeuLA"/>
-    <visualProperties xmi:id="_SzXnMcfnEe2fzNrhzgeuLA" position="347.0,-10.0" size="-1.0,-1.0"/>
+    <visualProperties xmi:id="_SzXnMcfnEe2fzNrhzgeuLA" position="347.0,-10.0" size="-1.0,-1.0" visible="false"/>
     <visibility xmi:id="_SzXnMsfnEe2fzNrhzgeuLA" label="+"/>
     <attributes xmi:id="_SzXnM8fnEe2fzNrhzgeuLA" name="id">
       <modelElement href="POO.uml#_Suw0AMfnEe2fzNrhzgeuLA"/>
@@ -83,9 +92,118 @@
       </parameters>
     </operations>
   </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_YczU4MfnEe2fzNrhzgeuLA" name="Cliente" generalizations="_YcxfsMfnEe2fzNrhzgeuLA">
+    <modelElement href="POO.uml#_Yb5V8MfnEe2fzNrhzgeuLA"/>
+    <visualProperties xmi:id="_YczU4cfnEe2fzNrhzgeuLA" position="409.0,419.0" size="-1.0,-1.0" visible="false"/>
+    <visibility xmi:id="_YczU4sfnEe2fzNrhzgeuLA" label="+"/>
+    <attributes xmi:id="_YczU48fnEe2fzNrhzgeuLA" name="saldoCompras">
+      <modelElement href="POO.uml#_YcADocfnEe2fzNrhzgeuLA"/>
+      <visibility xmi:id="_YczU5MfnEe2fzNrhzgeuLA" label="+"/>
+      <cardinality xmi:id="_YczU5cfnEe2fzNrhzgeuLA" label="1" max="1" min="1"/>
+      <type xmi:id="_YczU5sfnEe2fzNrhzgeuLA" name="double">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_YczU58fnEe2fzNrhzgeuLA" name="Cliente">
+      <modelElement href="POO.uml#_Yb59AMfnEe2fzNrhzgeuLA"/>
+      <keywords xmi:id="_YczU6MfnEe2fzNrhzgeuLA" keyword="create"/>
+      <stereotypes xmi:id="_YczU6cfnEe2fzNrhzgeuLA" name="LegacyStyledElement">
+        <modelElement href="POO.uml#_Yb6kEMfnEe2fzNrhzgeuLA"/>
+      </stereotypes>
+      <visibility xmi:id="_YczU6sfnEe2fzNrhzgeuLA" label="+"/>
+      <cardinality xmi:id="_YczU68fnEe2fzNrhzgeuLA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_YczU7MfnEe2fzNrhzgeuLA">
+        <modelElement href="POO.uml#_Yb6kEcfnEe2fzNrhzgeuLA"/>
+        <type xmi:id="_YczU7cfnEe2fzNrhzgeuLA" name="Cliente">
+          <modelElement href="POO.uml#_Yb5V8MfnEe2fzNrhzgeuLA"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_YczU7sfnEe2fzNrhzgeuLA" name="Cliente">
+      <modelElement href="POO.uml#_Yb6kEsfnEe2fzNrhzgeuLA"/>
+      <keywords xmi:id="_YczU78fnEe2fzNrhzgeuLA" keyword="create"/>
+      <visibility xmi:id="_YczU8MfnEe2fzNrhzgeuLA" label="+"/>
+      <cardinality xmi:id="_YczU8cfnEe2fzNrhzgeuLA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_YczU8sfnEe2fzNrhzgeuLA">
+        <modelElement href="POO.uml#_Yb7LIcfnEe2fzNrhzgeuLA"/>
+        <type xmi:id="_YczU88fnEe2fzNrhzgeuLA" name="Cliente">
+          <modelElement href="POO.uml#_Yb5V8MfnEe2fzNrhzgeuLA"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_YczU9MfnEe2fzNrhzgeuLA" name="saldoCompras">
+        <modelElement href="POO.uml#_Yb6kE8fnEe2fzNrhzgeuLA"/>
+        <cardinality xmi:id="_YczU9cfnEe2fzNrhzgeuLA" label="1" max="1" min="1"/>
+        <type xmi:id="_YczU9sfnEe2fzNrhzgeuLA" name="double">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_X2aDQMfnEe2fzNrhzgeuLA" name="Funcionario" generalizations="_X2YOEMfnEe2fzNrhzgeuLA">
+    <modelElement href="POO.uml#_X1cZ8MfnEe2fzNrhzgeuLA"/>
+    <visualProperties xmi:id="_X2aDQcfnEe2fzNrhzgeuLA" position="410.0,194.0" size="-1.0,-1.0" visible="false"/>
+    <visibility xmi:id="_X2aDQsfnEe2fzNrhzgeuLA" label="+"/>
+    <attributes xmi:id="_X2aDQ8fnEe2fzNrhzgeuLA" name="cargo">
+      <modelElement href="POO.uml#_X1onMMfnEe2fzNrhzgeuLA"/>
+      <visibility xmi:id="_X2aDRMfnEe2fzNrhzgeuLA" label="+"/>
+      <cardinality xmi:id="_X2aDRcfnEe2fzNrhzgeuLA" label="1" max="1" min="1"/>
+      <type xmi:id="_X2aDRsfnEe2fzNrhzgeuLA" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_X2aDR8fnEe2fzNrhzgeuLA" name="setor">
+      <modelElement href="POO.uml#_X1onMcfnEe2fzNrhzgeuLA"/>
+      <visibility xmi:id="_X2aDSMfnEe2fzNrhzgeuLA" label="+"/>
+      <cardinality xmi:id="_X2aDScfnEe2fzNrhzgeuLA" label="1" max="1" min="1"/>
+      <type xmi:id="_X2aDSsfnEe2fzNrhzgeuLA" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_X2aDS8fnEe2fzNrhzgeuLA" name="Funcionario">
+      <modelElement href="POO.uml#_X1ePIMfnEe2fzNrhzgeuLA"/>
+      <keywords xmi:id="_X2aDTMfnEe2fzNrhzgeuLA" keyword="create"/>
+      <stereotypes xmi:id="_X2aDTcfnEe2fzNrhzgeuLA" name="LegacyStyledElement">
+        <modelElement href="POO.uml#_X1e2MMfnEe2fzNrhzgeuLA"/>
+      </stereotypes>
+      <visibility xmi:id="_X2aDTsfnEe2fzNrhzgeuLA" label="+"/>
+      <cardinality xmi:id="_X2aDT8fnEe2fzNrhzgeuLA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_X2aDUMfnEe2fzNrhzgeuLA">
+        <modelElement href="POO.uml#_X1e2McfnEe2fzNrhzgeuLA"/>
+        <type xmi:id="_X2aDUcfnEe2fzNrhzgeuLA" name="Funcionario">
+          <modelElement href="POO.uml#_X1cZ8MfnEe2fzNrhzgeuLA"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_X2aDUsfnEe2fzNrhzgeuLA" name="Funcionario">
+      <modelElement href="POO.uml#_X1fdQMfnEe2fzNrhzgeuLA"/>
+      <keywords xmi:id="_X2aDU8fnEe2fzNrhzgeuLA" keyword="create"/>
+      <visibility xmi:id="_X2aDVMfnEe2fzNrhzgeuLA" label="+"/>
+      <cardinality xmi:id="_X2aDVcfnEe2fzNrhzgeuLA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_X2aDVsfnEe2fzNrhzgeuLA">
+        <modelElement href="POO.uml#_X1fdRcfnEe2fzNrhzgeuLA"/>
+        <type xmi:id="_X2aDV8fnEe2fzNrhzgeuLA" name="Funcionario">
+          <modelElement href="POO.uml#_X1cZ8MfnEe2fzNrhzgeuLA"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_X2aDWMfnEe2fzNrhzgeuLA" name="cargo">
+        <modelElement href="POO.uml#_X1fdQcfnEe2fzNrhzgeuLA"/>
+        <cardinality xmi:id="_X2aDWcfnEe2fzNrhzgeuLA" label="1" max="1" min="1"/>
+        <type xmi:id="_X2aDWsfnEe2fzNrhzgeuLA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_X2aDW8fnEe2fzNrhzgeuLA" name="setor">
+        <modelElement href="POO.uml#_X1fdQsfnEe2fzNrhzgeuLA"/>
+        <cardinality xmi:id="_X2aDXMfnEe2fzNrhzgeuLA" label="1" max="1" min="1"/>
+        <type xmi:id="_X2aDXcfnEe2fzNrhzgeuLA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
   <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_Tnz74MfnEe2fzNrhzgeuLA" name="PessoaJuridica" generalizations="_TnyGsMfnEe2fzNrhzgeuLA">
     <modelElement href="POO.uml#_TmyBIMfnEe2fzNrhzgeuLA"/>
-    <visualProperties xmi:id="_Tnz74cfnEe2fzNrhzgeuLA" position="6.0,172.0" size="-1.0,-1.0"/>
+    <visualProperties xmi:id="_Tnz74cfnEe2fzNrhzgeuLA" position="6.0,172.0" size="-1.0,-1.0" visible="false"/>
     <visibility xmi:id="_Tnz74sfnEe2fzNrhzgeuLA" label="+"/>
     <attributes xmi:id="_Tnz748fnEe2fzNrhzgeuLA" name="razaoSocial">
       <modelElement href="POO.uml#_Tm6kAMfnEe2fzNrhzgeuLA"/>
@@ -147,7 +265,7 @@
   </nodes>
   <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_TTIFUMfnEe2fzNrhzgeuLA" name="PessoaFisica" abstractClass="true" generalizations="_TTFCAMfnEe2fzNrhzgeuLA" subclassedBy="_X2YOEMfnEe2fzNrhzgeuLA _YcxfsMfnEe2fzNrhzgeuLA">
     <modelElement href="POO.uml#_TR8ZkMfnEe2fzNrhzgeuLA"/>
-    <visualProperties xmi:id="_TTIFUcfnEe2fzNrhzgeuLA" position="648.0,176.0" size="-1.0,-1.0"/>
+    <visualProperties xmi:id="_TTIFUcfnEe2fzNrhzgeuLA" position="464.0,34.0" size="-1.0,-1.0" visible="false"/>
     <visibility xmi:id="_TTIFUsfnEe2fzNrhzgeuLA" label="+"/>
     <attributes xmi:id="_TTIFU8fnEe2fzNrhzgeuLA" name="nome">
       <modelElement href="POO.uml#_TSOGYMfnEe2fzNrhzgeuLA"/>
@@ -207,110 +325,378 @@
       </parameters>
     </operations>
   </nodes>
-  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_X2aDQMfnEe2fzNrhzgeuLA" name="Funcionario" generalizations="_X2YOEMfnEe2fzNrhzgeuLA">
-    <modelElement href="POO.uml#_X1cZ8MfnEe2fzNrhzgeuLA"/>
-    <visualProperties xmi:id="_X2aDQcfnEe2fzNrhzgeuLA" position="783.0,365.0" size="-1.0,-1.0"/>
-    <visibility xmi:id="_X2aDQsfnEe2fzNrhzgeuLA" label="+"/>
-    <attributes xmi:id="_X2aDQ8fnEe2fzNrhzgeuLA" name="cargo">
-      <modelElement href="POO.uml#_X1onMMfnEe2fzNrhzgeuLA"/>
-      <visibility xmi:id="_X2aDRMfnEe2fzNrhzgeuLA" label="+"/>
-      <cardinality xmi:id="_X2aDRcfnEe2fzNrhzgeuLA" label="1" max="1" min="1"/>
-      <type xmi:id="_X2aDRsfnEe2fzNrhzgeuLA" name="String">
-        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_hKBRsMitEe2Wn-cmpFegyg" name="ContaPoupanca" generalizations="_hJ-OYMitEe2Wn-cmpFegyg">
+    <modelElement href="POO.uml#_hIgOwMitEe2Wn-cmpFegyg"/>
+    <visualProperties xmi:id="_hKBRscitEe2Wn-cmpFegyg" position="98.0,83.0" size="573.0,137.0"/>
+    <visibility xmi:id="_hKBRssitEe2Wn-cmpFegyg" label="+"/>
+    <attributes xmi:id="_hKBRs8itEe2Wn-cmpFegyg" name="rendimentos">
+      <modelElement href="POO.uml#_hIr08MitEe2Wn-cmpFegyg"/>
+      <visibility xmi:id="_hKBRtMitEe2Wn-cmpFegyg" label="+"/>
+      <cardinality xmi:id="_hKBRtcitEe2Wn-cmpFegyg" label="1" max="1" min="1"/>
+      <type xmi:id="_hKBRtsitEe2Wn-cmpFegyg" name="double">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
       </type>
     </attributes>
-    <attributes xmi:id="_X2aDR8fnEe2fzNrhzgeuLA" name="setor">
-      <modelElement href="POO.uml#_X1onMcfnEe2fzNrhzgeuLA"/>
-      <visibility xmi:id="_X2aDSMfnEe2fzNrhzgeuLA" label="+"/>
-      <cardinality xmi:id="_X2aDScfnEe2fzNrhzgeuLA" label="1" max="1" min="1"/>
-      <type xmi:id="_X2aDSsfnEe2fzNrhzgeuLA" name="String">
-        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-      </type>
-    </attributes>
-    <operations xmi:id="_X2aDS8fnEe2fzNrhzgeuLA" name="Funcionario">
-      <modelElement href="POO.uml#_X1ePIMfnEe2fzNrhzgeuLA"/>
-      <keywords xmi:id="_X2aDTMfnEe2fzNrhzgeuLA" keyword="create"/>
-      <stereotypes xmi:id="_X2aDTcfnEe2fzNrhzgeuLA" name="LegacyStyledElement">
-        <modelElement href="POO.uml#_X1e2MMfnEe2fzNrhzgeuLA"/>
+    <operations xmi:id="_hKBRt8itEe2Wn-cmpFegyg" name="ContaPoupanca">
+      <modelElement href="POO.uml#_hIhc4MitEe2Wn-cmpFegyg"/>
+      <keywords xmi:id="_hKBRuMitEe2Wn-cmpFegyg" keyword="create"/>
+      <stereotypes xmi:id="_hKBRucitEe2Wn-cmpFegyg" name="LegacyStyledElement">
+        <modelElement href="POO.uml#_hIiD8sitEe2Wn-cmpFegyg"/>
       </stereotypes>
-      <visibility xmi:id="_X2aDTsfnEe2fzNrhzgeuLA" label="+"/>
-      <cardinality xmi:id="_X2aDT8fnEe2fzNrhzgeuLA" label="1" max="1" min="1"/>
-      <outParameters xmi:id="_X2aDUMfnEe2fzNrhzgeuLA">
-        <modelElement href="POO.uml#_X1e2McfnEe2fzNrhzgeuLA"/>
-        <type xmi:id="_X2aDUcfnEe2fzNrhzgeuLA" name="Funcionario">
-          <modelElement href="POO.uml#_X1cZ8MfnEe2fzNrhzgeuLA"/>
+      <visibility xmi:id="_hKBRusitEe2Wn-cmpFegyg" label="+"/>
+      <cardinality xmi:id="_hKBRu8itEe2Wn-cmpFegyg" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_hKBRvMitEe2Wn-cmpFegyg">
+        <modelElement href="POO.uml#_hIirAMitEe2Wn-cmpFegyg"/>
+        <type xmi:id="_hKBRvcitEe2Wn-cmpFegyg" name="ContaPoupanca">
+          <modelElement href="POO.uml#_hIgOwMitEe2Wn-cmpFegyg"/>
         </type>
       </outParameters>
     </operations>
-    <operations xmi:id="_X2aDUsfnEe2fzNrhzgeuLA" name="Funcionario">
-      <modelElement href="POO.uml#_X1fdQMfnEe2fzNrhzgeuLA"/>
-      <keywords xmi:id="_X2aDU8fnEe2fzNrhzgeuLA" keyword="create"/>
-      <visibility xmi:id="_X2aDVMfnEe2fzNrhzgeuLA" label="+"/>
-      <cardinality xmi:id="_X2aDVcfnEe2fzNrhzgeuLA" label="1" max="1" min="1"/>
-      <outParameters xmi:id="_X2aDVsfnEe2fzNrhzgeuLA">
-        <modelElement href="POO.uml#_X1fdRcfnEe2fzNrhzgeuLA"/>
-        <type xmi:id="_X2aDV8fnEe2fzNrhzgeuLA" name="Funcionario">
-          <modelElement href="POO.uml#_X1cZ8MfnEe2fzNrhzgeuLA"/>
+    <operations xmi:id="_hKBRvsitEe2Wn-cmpFegyg" name="ContaPoupanca">
+      <modelElement href="POO.uml#_hIirAcitEe2Wn-cmpFegyg"/>
+      <keywords xmi:id="_hKBRv8itEe2Wn-cmpFegyg" keyword="create"/>
+      <visibility xmi:id="_hKBRwMitEe2Wn-cmpFegyg" label="+"/>
+      <cardinality xmi:id="_hKBRwcitEe2Wn-cmpFegyg" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_hKBRwsitEe2Wn-cmpFegyg">
+        <modelElement href="POO.uml#_hIjSE8itEe2Wn-cmpFegyg"/>
+        <type xmi:id="_hKBRw8itEe2Wn-cmpFegyg" name="ContaPoupanca">
+          <modelElement href="POO.uml#_hIgOwMitEe2Wn-cmpFegyg"/>
         </type>
       </outParameters>
-      <parameters xmi:id="_X2aDWMfnEe2fzNrhzgeuLA" name="cargo">
-        <modelElement href="POO.uml#_X1fdQcfnEe2fzNrhzgeuLA"/>
-        <cardinality xmi:id="_X2aDWcfnEe2fzNrhzgeuLA" label="1" max="1" min="1"/>
-        <type xmi:id="_X2aDWsfnEe2fzNrhzgeuLA" name="String">
+      <parameters xmi:id="_hKBRxMitEe2Wn-cmpFegyg" name="rendimentos">
+        <modelElement href="POO.uml#_hIjSEMitEe2Wn-cmpFegyg"/>
+        <cardinality xmi:id="_hKBRxcitEe2Wn-cmpFegyg" label="1" max="1" min="1"/>
+        <type xmi:id="_hKBRxsitEe2Wn-cmpFegyg" name="double">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_hKBRx8itEe2Wn-cmpFegyg" name="sacar">
+      <modelElement href="POO.uml#_hIkgMMitEe2Wn-cmpFegyg"/>
+      <stereotypes xmi:id="_hKBRyMitEe2Wn-cmpFegyg" name="LegacyStyledElement">
+        <modelElement href="POO.uml#_hIkgM8itEe2Wn-cmpFegyg"/>
+      </stereotypes>
+      <stereotypes xmi:id="_hKBRycitEe2Wn-cmpFegyg" name="Annotations">
+        <modelElement href="POO.uml#_hIlHQMitEe2Wn-cmpFegyg"/>
+      </stereotypes>
+      <visibility xmi:id="_hKBRysitEe2Wn-cmpFegyg" label="+"/>
+      <cardinality xmi:id="_hKBRy8itEe2Wn-cmpFegyg" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_hKBRzMitEe2Wn-cmpFegyg">
+        <modelElement href="POO.uml#_hIkgMsitEe2Wn-cmpFegyg"/>
+        <type xmi:id="_hKBRzcitEe2Wn-cmpFegyg" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_hKBRzsitEe2Wn-cmpFegyg" name="valor">
+        <modelElement href="POO.uml#_hIkgMcitEe2Wn-cmpFegyg"/>
+        <cardinality xmi:id="_hKBRz8itEe2Wn-cmpFegyg" label="1" max="1" min="1"/>
+        <type xmi:id="_hKBR0MitEe2Wn-cmpFegyg" name="double">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_hKBR0citEe2Wn-cmpFegyg" name="ContaPoupanca">
+      <modelElement href="POO.uml#_hIp_wMitEe2Wn-cmpFegyg"/>
+      <keywords xmi:id="_hKBR0sitEe2Wn-cmpFegyg" keyword="create"/>
+      <visibility xmi:id="_hKBR08itEe2Wn-cmpFegyg" label="+"/>
+      <cardinality xmi:id="_hKBR1MitEe2Wn-cmpFegyg" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_hKBR1citEe2Wn-cmpFegyg">
+        <modelElement href="POO.uml#_hIqm1citEe2Wn-cmpFegyg"/>
+        <type xmi:id="_hKBR1sitEe2Wn-cmpFegyg" name="ContaPoupanca">
+          <modelElement href="POO.uml#_hIgOwMitEe2Wn-cmpFegyg"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_hKBR18itEe2Wn-cmpFegyg" name="numeroBanco">
+        <modelElement href="POO.uml#_hIp_wcitEe2Wn-cmpFegyg"/>
+        <cardinality xmi:id="_hKBR2MitEe2Wn-cmpFegyg" label="1" max="1" min="1"/>
+        <type xmi:id="_hKBR2citEe2Wn-cmpFegyg" name="Long">
+          <modelElement href="POO.uml#_ghTE0sitEe2Wn-cmpFegyg"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_hKBR2sitEe2Wn-cmpFegyg" name="agencia">
+        <modelElement href="POO.uml#_hIp_wsitEe2Wn-cmpFegyg"/>
+        <cardinality xmi:id="_hKBR28itEe2Wn-cmpFegyg" label="1" max="1" min="1"/>
+        <type xmi:id="_hKBR3MitEe2Wn-cmpFegyg" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_hKBR3citEe2Wn-cmpFegyg" name="numeroConta">
+        <modelElement href="POO.uml#_hIp_w8itEe2Wn-cmpFegyg"/>
+        <cardinality xmi:id="_hKBR3sitEe2Wn-cmpFegyg" label="1" max="1" min="1"/>
+        <type xmi:id="_hKBR38itEe2Wn-cmpFegyg" name="Long">
+          <modelElement href="POO.uml#_ghTE0sitEe2Wn-cmpFegyg"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_hKBR4MitEe2Wn-cmpFegyg" name="titular">
+        <modelElement href="POO.uml#_hIqm0MitEe2Wn-cmpFegyg"/>
+        <cardinality xmi:id="_hKBR4citEe2Wn-cmpFegyg" label="1" max="1" min="1"/>
+        <type xmi:id="_hKBR4sitEe2Wn-cmpFegyg" name="String">
           <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
         </type>
       </parameters>
-      <parameters xmi:id="_X2aDW8fnEe2fzNrhzgeuLA" name="setor">
-        <modelElement href="POO.uml#_X1fdQsfnEe2fzNrhzgeuLA"/>
-        <cardinality xmi:id="_X2aDXMfnEe2fzNrhzgeuLA" label="1" max="1" min="1"/>
-        <type xmi:id="_X2aDXcfnEe2fzNrhzgeuLA" name="String">
-          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      <parameters xmi:id="_hKBR48itEe2Wn-cmpFegyg" name="saldo">
+        <modelElement href="POO.uml#_hIqm0citEe2Wn-cmpFegyg"/>
+        <cardinality xmi:id="_hKBR5MitEe2Wn-cmpFegyg" label="1" max="1" min="1"/>
+        <type xmi:id="_hKBR5citEe2Wn-cmpFegyg" name="double">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_hKBR5sitEe2Wn-cmpFegyg" name="rendimentos">
+        <modelElement href="POO.uml#_hIqm0sitEe2Wn-cmpFegyg"/>
+        <cardinality xmi:id="_hKBR58itEe2Wn-cmpFegyg" label="1" max="1" min="1"/>
+        <type xmi:id="_hKBR6MitEe2Wn-cmpFegyg" name="double">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
         </type>
       </parameters>
     </operations>
   </nodes>
-  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_YczU4MfnEe2fzNrhzgeuLA" name="Cliente" generalizations="_YcxfsMfnEe2fzNrhzgeuLA">
-    <modelElement href="POO.uml#_Yb5V8MfnEe2fzNrhzgeuLA"/>
-    <visualProperties xmi:id="_YczU4cfnEe2fzNrhzgeuLA" position="384.0,366.0" size="-1.0,-1.0"/>
-    <visibility xmi:id="_YczU4sfnEe2fzNrhzgeuLA" label="+"/>
-    <attributes xmi:id="_YczU48fnEe2fzNrhzgeuLA" name="saldoCompras">
-      <modelElement href="POO.uml#_YcADocfnEe2fzNrhzgeuLA"/>
-      <visibility xmi:id="_YczU5MfnEe2fzNrhzgeuLA" label="+"/>
-      <cardinality xmi:id="_YczU5cfnEe2fzNrhzgeuLA" label="1" max="1" min="1"/>
-      <type xmi:id="_YczU5sfnEe2fzNrhzgeuLA" name="double">
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_g174EMitEe2Wn-cmpFegyg" name="ContaCorrente" generalizations="_g13moMitEe2Wn-cmpFegyg">
+    <modelElement href="POO.uml#_g0S5UMitEe2Wn-cmpFegyg"/>
+    <visualProperties xmi:id="_g174EcitEe2Wn-cmpFegyg" position="90.0,317.0" size="579.0,175.0"/>
+    <visibility xmi:id="_g174EsitEe2Wn-cmpFegyg" label="+"/>
+    <attributes xmi:id="_g174E8itEe2Wn-cmpFegyg" name="limite">
+      <modelElement href="POO.uml#_g0lNMMitEe2Wn-cmpFegyg"/>
+      <visibility xmi:id="_g174FMitEe2Wn-cmpFegyg" label="+"/>
+      <cardinality xmi:id="_g174FcitEe2Wn-cmpFegyg" label="1" max="1" min="1"/>
+      <type xmi:id="_g174FsitEe2Wn-cmpFegyg" name="double">
         <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
       </type>
     </attributes>
-    <operations xmi:id="_YczU58fnEe2fzNrhzgeuLA" name="Cliente">
-      <modelElement href="POO.uml#_Yb59AMfnEe2fzNrhzgeuLA"/>
-      <keywords xmi:id="_YczU6MfnEe2fzNrhzgeuLA" keyword="create"/>
-      <stereotypes xmi:id="_YczU6cfnEe2fzNrhzgeuLA" name="LegacyStyledElement">
-        <modelElement href="POO.uml#_Yb6kEMfnEe2fzNrhzgeuLA"/>
+    <attributes xmi:id="_g174F8itEe2Wn-cmpFegyg" name="limiteInicial">
+      <modelElement href="POO.uml#_g0l0QMitEe2Wn-cmpFegyg"/>
+      <stereotypes xmi:id="_g174GMitEe2Wn-cmpFegyg" name="LegacyStyledElement">
+        <modelElement href="POO.uml#_g0mbUMitEe2Wn-cmpFegyg"/>
       </stereotypes>
-      <visibility xmi:id="_YczU6sfnEe2fzNrhzgeuLA" label="+"/>
-      <cardinality xmi:id="_YczU68fnEe2fzNrhzgeuLA" label="1" max="1" min="1"/>
-      <outParameters xmi:id="_YczU7MfnEe2fzNrhzgeuLA">
-        <modelElement href="POO.uml#_Yb6kEcfnEe2fzNrhzgeuLA"/>
-        <type xmi:id="_YczU7cfnEe2fzNrhzgeuLA" name="Cliente">
-          <modelElement href="POO.uml#_Yb5V8MfnEe2fzNrhzgeuLA"/>
+      <visibility xmi:id="_g174GcitEe2Wn-cmpFegyg" label="-"/>
+      <cardinality xmi:id="_g174GsitEe2Wn-cmpFegyg" label="1" max="1" min="1"/>
+      <type xmi:id="_g174G8itEe2Wn-cmpFegyg" name="double">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_g174HMitEe2Wn-cmpFegyg" name="ContaCorrente">
+      <modelElement href="POO.uml#_g0UHcMitEe2Wn-cmpFegyg"/>
+      <keywords xmi:id="_g174HcitEe2Wn-cmpFegyg" keyword="create"/>
+      <stereotypes xmi:id="_g174HsitEe2Wn-cmpFegyg" name="LegacyStyledElement">
+        <modelElement href="POO.uml#_g0UugMitEe2Wn-cmpFegyg"/>
+      </stereotypes>
+      <visibility xmi:id="_g174H8itEe2Wn-cmpFegyg" label="+"/>
+      <cardinality xmi:id="_g174IMitEe2Wn-cmpFegyg" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_g174IcitEe2Wn-cmpFegyg">
+        <modelElement href="POO.uml#_g0UugcitEe2Wn-cmpFegyg"/>
+        <type xmi:id="_g174IsitEe2Wn-cmpFegyg" name="ContaCorrente">
+          <modelElement href="POO.uml#_g0S5UMitEe2Wn-cmpFegyg"/>
         </type>
       </outParameters>
     </operations>
-    <operations xmi:id="_YczU7sfnEe2fzNrhzgeuLA" name="Cliente">
-      <modelElement href="POO.uml#_Yb6kEsfnEe2fzNrhzgeuLA"/>
-      <keywords xmi:id="_YczU78fnEe2fzNrhzgeuLA" keyword="create"/>
-      <visibility xmi:id="_YczU8MfnEe2fzNrhzgeuLA" label="+"/>
-      <cardinality xmi:id="_YczU8cfnEe2fzNrhzgeuLA" label="1" max="1" min="1"/>
-      <outParameters xmi:id="_YczU8sfnEe2fzNrhzgeuLA">
-        <modelElement href="POO.uml#_Yb7LIcfnEe2fzNrhzgeuLA"/>
-        <type xmi:id="_YczU88fnEe2fzNrhzgeuLA" name="Cliente">
-          <modelElement href="POO.uml#_Yb5V8MfnEe2fzNrhzgeuLA"/>
+    <operations xmi:id="_g174I8itEe2Wn-cmpFegyg" name="ContaCorrente">
+      <modelElement href="POO.uml#_g0VVkMitEe2Wn-cmpFegyg"/>
+      <keywords xmi:id="_g174JMitEe2Wn-cmpFegyg" keyword="create"/>
+      <visibility xmi:id="_g174JcitEe2Wn-cmpFegyg" label="+"/>
+      <cardinality xmi:id="_g174JsitEe2Wn-cmpFegyg" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_g174J8itEe2Wn-cmpFegyg">
+        <modelElement href="POO.uml#_g0VVlMitEe2Wn-cmpFegyg"/>
+        <type xmi:id="_g174KMitEe2Wn-cmpFegyg" name="ContaCorrente">
+          <modelElement href="POO.uml#_g0S5UMitEe2Wn-cmpFegyg"/>
         </type>
       </outParameters>
-      <parameters xmi:id="_YczU9MfnEe2fzNrhzgeuLA" name="saldoCompras">
-        <modelElement href="POO.uml#_Yb6kE8fnEe2fzNrhzgeuLA"/>
-        <cardinality xmi:id="_YczU9cfnEe2fzNrhzgeuLA" label="1" max="1" min="1"/>
-        <type xmi:id="_YczU9sfnEe2fzNrhzgeuLA" name="double">
+      <parameters xmi:id="_g174KcitEe2Wn-cmpFegyg" name="limite">
+        <modelElement href="POO.uml#_g0VVkcitEe2Wn-cmpFegyg"/>
+        <cardinality xmi:id="_g174KsitEe2Wn-cmpFegyg" label="1" max="1" min="1"/>
+        <type xmi:id="_g174K8itEe2Wn-cmpFegyg" name="double">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_g174LMitEe2Wn-cmpFegyg" name="sacar">
+      <modelElement href="POO.uml#_g0WjsMitEe2Wn-cmpFegyg"/>
+      <stereotypes xmi:id="_g174LcitEe2Wn-cmpFegyg" name="LegacyStyledElement">
+        <modelElement href="POO.uml#_g0XKwcitEe2Wn-cmpFegyg"/>
+      </stereotypes>
+      <stereotypes xmi:id="_g174LsitEe2Wn-cmpFegyg" name="Annotations">
+        <modelElement href="POO.uml#_g0YY4MitEe2Wn-cmpFegyg"/>
+      </stereotypes>
+      <visibility xmi:id="_g174L8itEe2Wn-cmpFegyg" label="+"/>
+      <cardinality xmi:id="_g174MMitEe2Wn-cmpFegyg" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_g174McitEe2Wn-cmpFegyg">
+        <modelElement href="POO.uml#_g0XKwMitEe2Wn-cmpFegyg"/>
+        <type xmi:id="_g174MsitEe2Wn-cmpFegyg" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_g174M8itEe2Wn-cmpFegyg" name="valor">
+        <modelElement href="POO.uml#_g0WjscitEe2Wn-cmpFegyg"/>
+        <cardinality xmi:id="_g174NMitEe2Wn-cmpFegyg" label="1" max="1" min="1"/>
+        <type xmi:id="_g174NcitEe2Wn-cmpFegyg" name="double">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_g174NsitEe2Wn-cmpFegyg" name="depositar">
+      <modelElement href="POO.uml#_g0Y_8MitEe2Wn-cmpFegyg"/>
+      <stereotypes xmi:id="_g174N8itEe2Wn-cmpFegyg" name="LegacyStyledElement">
+        <modelElement href="POO.uml#_g0ZnAcitEe2Wn-cmpFegyg"/>
+      </stereotypes>
+      <stereotypes xmi:id="_g174OMitEe2Wn-cmpFegyg" name="Annotations">
+        <modelElement href="POO.uml#_g0aOEMitEe2Wn-cmpFegyg"/>
+      </stereotypes>
+      <visibility xmi:id="_g174OcitEe2Wn-cmpFegyg" label="+"/>
+      <cardinality xmi:id="_g174OsitEe2Wn-cmpFegyg" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_g174O8itEe2Wn-cmpFegyg">
+        <modelElement href="POO.uml#_g0ZnAMitEe2Wn-cmpFegyg"/>
+        <type xmi:id="_g174PMitEe2Wn-cmpFegyg" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_g174PcitEe2Wn-cmpFegyg" name="valor">
+        <modelElement href="POO.uml#_g0Y_8citEe2Wn-cmpFegyg"/>
+        <cardinality xmi:id="_g174PsitEe2Wn-cmpFegyg" label="1" max="1" min="1"/>
+        <type xmi:id="_g174P8itEe2Wn-cmpFegyg" name="double">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_g174QMitEe2Wn-cmpFegyg" name="ContaCorrente">
+      <modelElement href="POO.uml#_g0iJ4MitEe2Wn-cmpFegyg"/>
+      <keywords xmi:id="_g174QcitEe2Wn-cmpFegyg" keyword="create"/>
+      <visibility xmi:id="_g174QsitEe2Wn-cmpFegyg" label="+"/>
+      <cardinality xmi:id="_g174Q8itEe2Wn-cmpFegyg" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_g174RMitEe2Wn-cmpFegyg">
+        <modelElement href="POO.uml#_g0jYAsitEe2Wn-cmpFegyg"/>
+        <type xmi:id="_g174RcitEe2Wn-cmpFegyg" name="ContaCorrente">
+          <modelElement href="POO.uml#_g0S5UMitEe2Wn-cmpFegyg"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_g174RsitEe2Wn-cmpFegyg" name="numeroBanco">
+        <modelElement href="POO.uml#_g0iJ4citEe2Wn-cmpFegyg"/>
+        <cardinality xmi:id="_g174R8itEe2Wn-cmpFegyg" label="1" max="1" min="1"/>
+        <type xmi:id="_g174SMitEe2Wn-cmpFegyg" name="Long">
+          <modelElement href="POO.uml#_ghTE0sitEe2Wn-cmpFegyg"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_g174ScitEe2Wn-cmpFegyg" name="agencia">
+        <modelElement href="POO.uml#_g0iw8MitEe2Wn-cmpFegyg"/>
+        <cardinality xmi:id="_g174SsitEe2Wn-cmpFegyg" label="1" max="1" min="1"/>
+        <type xmi:id="_g174S8itEe2Wn-cmpFegyg" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_g174TMitEe2Wn-cmpFegyg" name="numeroConta">
+        <modelElement href="POO.uml#_g0iw8citEe2Wn-cmpFegyg"/>
+        <cardinality xmi:id="_g174TcitEe2Wn-cmpFegyg" label="1" max="1" min="1"/>
+        <type xmi:id="_g174TsitEe2Wn-cmpFegyg" name="Long">
+          <modelElement href="POO.uml#_ghTE0sitEe2Wn-cmpFegyg"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_g174T8itEe2Wn-cmpFegyg" name="titular">
+        <modelElement href="POO.uml#_g0iw8sitEe2Wn-cmpFegyg"/>
+        <cardinality xmi:id="_g174UMitEe2Wn-cmpFegyg" label="1" max="1" min="1"/>
+        <type xmi:id="_g174UcitEe2Wn-cmpFegyg" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_g174UsitEe2Wn-cmpFegyg" name="saldo">
+        <modelElement href="POO.uml#_g0iw88itEe2Wn-cmpFegyg"/>
+        <cardinality xmi:id="_g174U8itEe2Wn-cmpFegyg" label="1" max="1" min="1"/>
+        <type xmi:id="_g174VMitEe2Wn-cmpFegyg" name="double">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_g174VcitEe2Wn-cmpFegyg" name="limite">
+        <modelElement href="POO.uml#_g0iw9MitEe2Wn-cmpFegyg"/>
+        <cardinality xmi:id="_g174VsitEe2Wn-cmpFegyg" label="1" max="1" min="1"/>
+        <type xmi:id="_g174V8itEe2Wn-cmpFegyg" name="double">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_glMGUMitEe2Wn-cmpFegyg" name="ContaBancaria" abstractClass="true" subclassedBy="_g13moMitEe2Wn-cmpFegyg _hJ-OYMitEe2Wn-cmpFegyg">
+    <modelElement href="POO.uml#_gg-UsMitEe2Wn-cmpFegyg"/>
+    <visualProperties xmi:id="_glMGUcitEe2Wn-cmpFegyg" position="901.0,55.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_glMGUsitEe2Wn-cmpFegyg" label="+"/>
+    <attributes xmi:id="_glMGU8itEe2Wn-cmpFegyg" name="numeroBanco">
+      <modelElement href="POO.uml#_ghXWQMitEe2Wn-cmpFegyg"/>
+      <visibility xmi:id="_glMGVMitEe2Wn-cmpFegyg" label="+"/>
+      <cardinality xmi:id="_glMGVcitEe2Wn-cmpFegyg" label="1" max="1" min="1"/>
+      <type xmi:id="_glMGVsitEe2Wn-cmpFegyg" name="Long">
+        <modelElement href="POO.uml#_ghTE0sitEe2Wn-cmpFegyg"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_glMGV8itEe2Wn-cmpFegyg" name="agencia">
+      <modelElement href="POO.uml#_ghYkYMitEe2Wn-cmpFegyg"/>
+      <visibility xmi:id="_glMGWMitEe2Wn-cmpFegyg" label="+"/>
+      <cardinality xmi:id="_glMGWcitEe2Wn-cmpFegyg" label="1" max="1" min="1"/>
+      <type xmi:id="_glMGWsitEe2Wn-cmpFegyg" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_glMGW8itEe2Wn-cmpFegyg" name="numeroConta">
+      <modelElement href="POO.uml#_ghZLcMitEe2Wn-cmpFegyg"/>
+      <visibility xmi:id="_glMGXMitEe2Wn-cmpFegyg" label="+"/>
+      <cardinality xmi:id="_glMGXcitEe2Wn-cmpFegyg" label="1" max="1" min="1"/>
+      <type xmi:id="_glMGXsitEe2Wn-cmpFegyg" name="Long">
+        <modelElement href="POO.uml#_ghTE0sitEe2Wn-cmpFegyg"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_glMGX8itEe2Wn-cmpFegyg" name="titular">
+      <modelElement href="POO.uml#_ghZLccitEe2Wn-cmpFegyg"/>
+      <visibility xmi:id="_glMGYMitEe2Wn-cmpFegyg" label="+"/>
+      <cardinality xmi:id="_glMGYcitEe2Wn-cmpFegyg" label="1" max="1" min="1"/>
+      <type xmi:id="_glMGYsitEe2Wn-cmpFegyg" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_glMGY8itEe2Wn-cmpFegyg" name="saldo">
+      <modelElement href="POO.uml#_ghZygMitEe2Wn-cmpFegyg"/>
+      <visibility xmi:id="_glMGZMitEe2Wn-cmpFegyg" label="+"/>
+      <cardinality xmi:id="_glMGZcitEe2Wn-cmpFegyg" label="1" max="1" min="1"/>
+      <type xmi:id="_glMGZsitEe2Wn-cmpFegyg" name="double">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_glMGZ8itEe2Wn-cmpFegyg" name="verificarSaldo">
+      <modelElement href="POO.uml#_ghFpcMitEe2Wn-cmpFegyg"/>
+      <visibility xmi:id="_glMGaMitEe2Wn-cmpFegyg" label="+"/>
+      <cardinality xmi:id="_glMGacitEe2Wn-cmpFegyg" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_glMGasitEe2Wn-cmpFegyg">
+        <modelElement href="POO.uml#_ghGQgMitEe2Wn-cmpFegyg"/>
+        <type xmi:id="_glMGa8itEe2Wn-cmpFegyg" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_glMGbMitEe2Wn-cmpFegyg" name="depositar">
+      <modelElement href="POO.uml#_ghG3kMitEe2Wn-cmpFegyg"/>
+      <visibility xmi:id="_glMGbcitEe2Wn-cmpFegyg" label="+"/>
+      <cardinality xmi:id="_glMGbsitEe2Wn-cmpFegyg" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_glMGb8itEe2Wn-cmpFegyg">
+        <modelElement href="POO.uml#_ghHeoMitEe2Wn-cmpFegyg"/>
+        <type xmi:id="_glMGcMitEe2Wn-cmpFegyg" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_glMGccitEe2Wn-cmpFegyg" name="valor">
+        <modelElement href="POO.uml#_ghG3kcitEe2Wn-cmpFegyg"/>
+        <cardinality xmi:id="_glMGcsitEe2Wn-cmpFegyg" label="1" max="1" min="1"/>
+        <type xmi:id="_glMGc8itEe2Wn-cmpFegyg" name="double">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_glMGdMitEe2Wn-cmpFegyg" name="sacar">
+      <modelElement href="POO.uml#_ghIFsMitEe2Wn-cmpFegyg"/>
+      <visibility xmi:id="_glMGdcitEe2Wn-cmpFegyg" label="+"/>
+      <cardinality xmi:id="_glMGdsitEe2Wn-cmpFegyg" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_glMGd8itEe2Wn-cmpFegyg">
+        <modelElement href="POO.uml#_ghIFssitEe2Wn-cmpFegyg"/>
+        <type xmi:id="_glMGeMitEe2Wn-cmpFegyg" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_glMGecitEe2Wn-cmpFegyg" name="valor">
+        <modelElement href="POO.uml#_ghIFscitEe2Wn-cmpFegyg"/>
+        <cardinality xmi:id="_glMGesitEe2Wn-cmpFegyg" label="1" max="1" min="1"/>
+        <type xmi:id="_glMGe8itEe2Wn-cmpFegyg" name="double">
           <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
         </type>
       </parameters>
