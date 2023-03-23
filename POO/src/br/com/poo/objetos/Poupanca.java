@@ -1,20 +1,21 @@
 package br.com.poo.objetos;
 
-import java.awt.EventQueue;
-
-import javax.swing.JFrame;
-import javax.swing.JPanel;
-import javax.swing.border.EmptyBorder;
 import java.awt.Color;
-import javax.swing.JLabel;
-import javax.swing.JOptionPane;
-import javax.swing.JTextField;
 import java.awt.Font;
-import javax.swing.JButton;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.awt.event.FocusAdapter;
 import java.awt.event.FocusEvent;
-import java.awt.event.ActionListener;
-import java.awt.event.ActionEvent;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JOptionPane;
+import javax.swing.JPanel;
+import javax.swing.JTextField;
+import javax.swing.border.EmptyBorder;
+
+import br.com.poo.heranca.ContaPoupanca;
 
 public class Poupanca extends JFrame {
 
@@ -26,12 +27,17 @@ public class Poupanca extends JFrame {
 	private JTextField txtSaldo;
 	private JTextField txtValor;
 	private JTextField txtRendimento;
-
+	private ContaPoupanca cp;
+	private JButton btnSacar;
+	private JButton btnDepositar;
 
 	/**
 	 * Create the frame.
 	 */
 	public Poupanca() {
+		
+		cp = new ContaPoupanca();
+		
 		setTitle("SARFA BANK - Conta Poupança");
 		setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 		setBounds(100, 100, 788, 575);
@@ -141,6 +147,39 @@ public class Poupanca extends JFrame {
 		contentPane.add(lblSaldo);
 		
 		JButton btnVerificarSaldo = new JButton("Consultar Saldo");
+		btnVerificarSaldo.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				
+				if(btnVerificarSaldo.getText().equals("Abrir Conta")) {
+					cp.setNumeroBanco(Long.parseLong(txtNumeroBanco.getText()));
+					cp.setAgencia(Integer.parseInt(txtAgencia.getText()));
+					cp.setNumeroConta(Long.parseLong(txtNumeroConta.getText()));
+					cp.setTitular(txtTitular.getText());
+					cp.setSaldo(Double.parseDouble(txtSaldo.getText()));
+					cp.setRendimentos(Double.parseDouble(txtRendimento.getText()));
+					
+					//Vamos trocar o texto do botão
+					btnVerificarSaldo.setText("Verificar Saldo");
+					
+					//Desabilitar as caixas de texto
+					txtNumeroBanco.setEnabled(false);
+					txtNumeroConta.setEnabled(false);
+					txtAgencia.setEnabled(false);
+					txtTitular.setEnabled(false);
+					txtSaldo.setEnabled(false);
+					txtRendimento.setEnabled(false);
+					
+					//Habilitar os botões sacar e depositar
+					btnDepositar.setEnabled(true);
+					btnSacar.setEnabled(true);
+					txtValor.setEnabled(true);
+				}
+				else {
+					JOptionPane.showMessageDialog(null, "Seu saldo é: " + cp.getSaldo());
+				}
+				
+			}
+		});
 		btnVerificarSaldo.setForeground(new Color(43, 75, 108));
 		btnVerificarSaldo.setBackground(new Color(255, 218, 91));
 		btnVerificarSaldo.setFont(new Font("Tahoma", Font.PLAIN, 18));
@@ -148,7 +187,12 @@ public class Poupanca extends JFrame {
 		contentPane.add(btnVerificarSaldo);
 		btnVerificarSaldo.setEnabled(false);
 		
-		JButton btnSacar = new JButton("Sacar");
+		btnSacar = new JButton("Sacar");
+		btnSacar.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				JOptionPane.showMessageDialog(null, cp.sacar(Double.parseDouble(txtValor.getText())));
+			}
+		});
 		btnSacar.setForeground(new Color(43, 75, 108));
 		btnSacar.setFont(new Font("Tahoma", Font.PLAIN, 16));
 		btnSacar.setBackground(new Color(255, 218, 91));
@@ -156,7 +200,12 @@ public class Poupanca extends JFrame {
 		contentPane.add(btnSacar);
 		btnSacar.setEnabled(false);
 		
-		JButton btnDepositar = new JButton("Depositar");
+		btnDepositar = new JButton("Depositar");
+		btnDepositar.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				JOptionPane.showMessageDialog(null, cp.depositar(Double.parseDouble(txtValor.getText())));
+			}
+		});
 		btnDepositar.setForeground(new Color(43, 75, 108));
 		btnDepositar.setFont(new Font("Tahoma", Font.PLAIN, 16));
 		btnDepositar.setBackground(new Color(255, 218, 91));
