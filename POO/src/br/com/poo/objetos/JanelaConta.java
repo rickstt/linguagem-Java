@@ -64,6 +64,12 @@ public class JanelaConta extends JFrame {
 		contentPane.add(btnPoupanca);
 		
 		JButton btnCorrente = new JButton("Corrente");
+		btnCorrente.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				Corrente jc = new Corrente();
+				jc.setVisible(true);
+			}
+		});
 		btnCorrente.setFont(new Font("Monaco", Font.BOLD, 25));
 		btnCorrente.setForeground(new Color(255, 218, 91));
 		btnCorrente.setBackground(new Color(43, 75, 108));
