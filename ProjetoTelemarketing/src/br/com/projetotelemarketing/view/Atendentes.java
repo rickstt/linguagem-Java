@@ -23,6 +23,7 @@ import javax.swing.text.MaskFormatter;
 
 import br.com.projetotelemarketing.dao.CRUDChamado;
 import br.com.projetotelemarketing.domain.Chamado;
+import br.com.projetotelemarketing.util.AcessoSSH;
 
 public class Atendentes extends JFrame {
 
@@ -113,7 +114,7 @@ public class Atendentes extends JFrame {
 			lblAtualizar.addMouseListener(new MouseAdapter() {
 				@Override
 				public void mouseClicked(MouseEvent e) {
-					Chamado rChamado = new Chamado();
+					Chamado cr = new Chamado();
 					
 					if(txtResponsavel.getText().trim().equals("") || txtStatus.getText().trim().equals("") || txtId.getText().trim().equals("") 
 							|| txtDataResolucao.getText().trim().equals("")) {
@@ -121,12 +122,13 @@ public class Atendentes extends JFrame {
 								"Erro 4000765x" , JOptionPane.ERROR_MESSAGE);
 					}
 					else {
-						rChamado.setAtendente(txtResponsavel.getText());
-						rChamado.setStatusChamado(txtStatus.getText());
-						rChamado.setDataResolucao(Date.valueOf(txtDataResolucao.getText()));
-						rChamado.setObservacoes(txtObservacoes.getText());
-						rChamado.setIdChamado(id);
+						cr.setDataResolucao(Date.valueOf(txtDataResolucao.getText()));
+						cr.setStatusChamado(txtStatus.getText());
+						cr.setAtendente(txtResponsavel.getText());
+						cr.setObservacoes(txtObservacoes.getText());
+						cr.setIdChamado(id);
 						
+						JOptionPane.showMessageDialog(null, cc.atualizar(cr));
 						carregarTabela();
 						limparCampos();
 					}
@@ -192,11 +194,25 @@ public class Atendentes extends JFrame {
 			txtDataResolucao.setBounds(279, 145, 201, 27);
 			contentPane.add(txtDataResolucao);
 			
+			JLabel lblAbrirGrafico = new JLabel("Visualizar Gráfico");
+			lblAbrirGrafico.addMouseListener(new MouseAdapter() {
+				@Override
+				public void mouseClicked(MouseEvent e) {
+					AcessoSSH assh = new AcessoSSH();
+					assh.executar();
+				}
+			});
+			lblAbrirGrafico.setHorizontalAlignment(SwingConstants.CENTER);
+			lblAbrirGrafico.setFont(new Font("Segoe UI Light", Font.PLAIN, 15));
+			lblAbrirGrafico.setBounds(49, 350, 156, 40);
+			contentPane.add(lblAbrirGrafico);
+			
 			
 			JLabel lblNewLabel = new JLabel("");
 			lblNewLabel.setIcon(new ImageIcon("D:\\java\\Henrique\\ProjetoTelemarketing\\src\\br\\com\\projetotelemarketing\\images\\layoutatendente.png"));
 			lblNewLabel.setBounds(0, 0, 784, 532);
 			contentPane.add(lblNewLabel);
+			
 		}
 		catch(Exception e) {
 			e.printStackTrace();

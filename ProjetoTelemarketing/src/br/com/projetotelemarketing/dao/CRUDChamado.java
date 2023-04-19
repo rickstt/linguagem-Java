@@ -95,22 +95,22 @@ public class CRUDChamado extends Conexao implements CRUD<Chamado>{
 			String sql = "";
 			
 			if(obj.getIdChamado() != 0) {
-				sql = "Select * from chamado WHERE idChamado=" + obj.getIdChamado();
+				sql = "Select * from chamado WHERE statusChamado = 'Pendente' and idChamado=" + obj.getIdChamado();
 			}
 			else if(obj.getDepSolicitado() != null) {
-				sql = "Select * from chamado WHERE depSolicitado like " + obj.getDepSolicitado();
+				sql = "Select * from chamado WHERE  statusChamado = 'Pendente' and depSolicitado like " + obj.getDepSolicitado();
 			}
 			else if(obj.getSolicitacao() != null) {
-				sql = "Select * from chamado WHERE solicitacao like " + obj.getSolicitacao() + "%";
+				sql = "Select * from chamado WHERE statusChamado = 'Pendente' and solicitacao like " + obj.getSolicitacao() + "%";
 			}
 			else if(obj.getDescChamado() != null) {
-				sql = "Select * from chamado WHERE descChamado like %" + obj.getDescChamado() + "%";
+				sql = "Select * from chamado WHERE statusChamado = 'Pendente' and descChamado like %" + obj.getDescChamado() + "%";
 			}
 			else if(obj.getDataAbertura() != null) {
-				sql = "Select * from chamado WHERE dataAbertura like " + obj.getDataAbertura();
+				sql = "Select * from chamado WHERE statusChamado = 'Pendente' and dataAbertura like " + obj.getDataAbertura();
 			}
 			else if(obj.getStatusChamado() != null) {
-				sql = "Select * from chamado WHERE statusChamado like " + obj.getStatusChamado();
+				sql = "Select * from chamado WHERE statusChamado = 'Pendente' and statusChamado like " + obj.getStatusChamado();
 			}
 			else {
 				sql = "Select * from chamado";
@@ -155,12 +155,13 @@ public class CRUDChamado extends Conexao implements CRUD<Chamado>{
 		Chamado chamado = new Chamado();
 		try {
 			abrirConexao();
-			String sql = "UPDATE chamado SET dataResolucao=?, statusSolicitacao=?, atendente=? WHERE idChamado=?";
+			String sql = "UPDATE chamado SET dataResolucao=?, statusChamado=?, atendente=?, observacoes=? WHERE idChamado=?";
 			pst = conn.prepareStatement(sql);
 			pst.setDate(1, obj.getDataResolucao());
 			pst.setString(2, obj.getStatusChamado());
 			pst.setString(3, obj.getAtendente());
-			pst.setLong(4, obj.getIdChamado());
+			pst.setString(4, obj.getObservacoes());
+			pst.setLong(5, obj.getIdChamado());
 			
 			int i = pst.executeUpdate();
 			if(i > 0) {
